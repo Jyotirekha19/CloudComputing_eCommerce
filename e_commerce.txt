@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embroidery E-Commerce</title>
+  <style>
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --primary-color: #efbbff;
+      --secondary-color: #8B5D33; 
+      --accent-color: #660066;
+      --checkout-button-color: #660066;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--primary-color);
+    }
+    header {
+      background-color: var(--accent-color);
+      color: #fff;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    section h2 {
+      color: var(--accent-color);
+    }
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .product {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      width: 300px; 
+    }
+    .product img {
+      max-width: 100%;
+      height: 200px; 
+    }
+    .product h3 {
+      color: var(--accent-color);
+      font-size: 1.2rem;
+    }
+    .product p {
+      color: var(--secondary-color);
+      font-weight: bold;
+    }
+    .product button {
+      background-color: var(--accent-color);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .cart-items {
+      border: 1px solid #ddd;
+      padding: 20px;
+      background-color: #fff;
+      margin: 10px 0;
+    }
+    .checkout-button {
+      background-color: var(--checkout-button-color);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: var(--accent-color);
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Embroidery Marketplace</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home">
+    <h2>Discover Exquisite Embroidery Creations</h2>
+    <p>Explore our collection of hand-made Embroidery products.</p>
+  </section>
+  <section id="products">
+    <h2>Featured Embroidered Products</h2>
+    <div class="product-gallery">
+      <div class="product">
+        <img src="image (1).png" alt="Product 1">
+        <h3>Embroidered Dresses for Boys</h3>
+        <p>₹1500.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="image (3).png" alt="Product 1">
+        <h3>Embroidered Dresses for Girls</h3>
+        <p>₹2000.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="ex3.jpg" alt="Product 2">
+        <h3>Embroidered Dresses for Men</h3>
+        <p>₹5000.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="image (2).png" alt="Product 3">
+        <h3>Embroidered Dresses for Women</h3>
+        <p>₹15000.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="a1.png" alt="Product 1">
+        <h3>Embroidered Dresses for Women</h3>
+        <p>₹3000.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="5000.png" alt="Product 1">
+        <h3>Embroidered Dresses for Boys</h3>
+        <p>₹1999.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="exa2.jpg" alt="Product 1">
+        <h3>Embroidered Dresses for Girls</h3>
+        <p>₹999.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="a2.jpg" alt="Product 1">
+        <h3>Embroidered Dresses for Boys>
+        <p>₹2500.00</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Your Embroidery Shopping Cart</h2>
+    <div class="cart-items">
+      <p>Cart is Empty!</p>
+    </div>
+    <p>Total: ₹0[Total Amount]</p>
+    <button class="checkout-button">Proceed to Checkout</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Embroidery Marketplace. All rights reserved.</p>
+  </footer>
+</body>
+</html>
